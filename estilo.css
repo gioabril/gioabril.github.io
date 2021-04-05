@@ -1,0 +1,670 @@
+body{
+  margin: 0;
+  padding: 0;
+	width: 100%;
+  /*background: #1F2530!important;*/
+	background: #FFF;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+
+}
+
+@font-face {
+  font-family: 'myfont1';
+font-variant:inherit;
+	font-weight: lighter;
+  src:url("fonts/Aleo-Light.otf");
+}
+@font-face {
+  font-family: 'myfont2';
+	font-variant: normal;
+  src:url("fonts/LeagueGothic-Regular.otf");
+}
+
+nav{
+	width:100%;
+	min-height: 50px;
+	height: auto;
+	background:-webkit-linear-gradient(top, #3b3d46, #2c3035);
+	position: fixed;
+	top: 0;
+	z-index: 500;
+	
+}
+nav > img{
+	float:left;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+#contSocial{
+  width:200px;
+  height:50px;
+	position: absolute;
+	right: 10px;
+  text-align: center;
+}
+#contSocial > a > i{
+  /*border: solid red;*/
+  display:inline-block;
+	vertical-align: top;
+  margin: 10px 15px 0px 0px;
+  color: #FFF !important;
+}
+#contSocial > a > i:hover{
+    color: #1F2530!important;
+}
+
+.menu{
+	width:50%;
+	min-height: 50px;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	visibility: visible;
+	border: 0px;
+}
+
+.menu > h2{
+	margin: 0;
+	padding: 0;
+	display:inline-block;
+	vertical-align: top;
+	color: white;
+	font-weight: lighter;
+	font-size: 1.4em;
+	margin-left:20px;
+	margin-top: 10px;
+	cursor: pointer;
+	font-family:"myfont1";
+	padding-bottom: 8px;
+}
+.active{
+	color:#FF5C40!important;
+}
+
+.menu > i{
+	display:none;
+}
+
+@media screen and (max-width:720px){
+	.menu > h2{
+		display:none;
+	}
+	.menu > i{
+		display:inline-block;
+		color: white;
+		cursor: pointer;
+		margin-left: 10px;
+		line-height: 45px;
+	}
+	.menu{
+		width: 200px;
+	}
+	nav > img{
+		margin-left:0px;
+	}
+	#contSocial{
+  		width:150px;
+		right: 2px;
+	}
+	
+	header{
+  	height: 300px!important;
+	}
+
+	#logo{
+		display:none;
+	}
+	#text_header{
+		width: 90%!important;
+		top: 60px!important;
+		margin-top: 0px!important;
+		position: relative;
+	}
+	#text_header > i{
+		display:none;
+	}
+	#text_header h2{
+	font-size: 1.5em!important
+	}
+	
+	.sub{
+	display:block!important;
+	}
+	._der{
+	width:90%!important;
+	margin: 0 auto;
+
+	}
+
+	._izq{
+	width:500px!important;
+	margin: 0 auto;
+
+	}
+	.fotos{
+	width: 100%!important;
+	}
+
+	.text_sec_web{
+	width: 95%!important;
+	}
+	.cont_item{
+	width: 95%!important;
+	height: 600px!important;
+
+
+	}
+}
+@media screen and (max-width:450px){
+
+	.menu{
+		width:auto!important;
+	}
+
+	#contSocial{
+		display:none;
+	}
+	
+	header{
+  	height: 250px!important;
+	}
+
+	#text_header{
+		width: 98%!important;
+	}
+
+	#text_header h1{
+	font-size: 3em!important
+	}
+	#text_header h2{
+	font-size: 1.2em!important
+	}
+	
+	.sub{
+		
+	display:block!important;
+	}
+	.sub > .element{
+		width:100%!important;
+	}
+	
+
+	._izq{
+	width:95%!important;
+	margin: 0 auto;
+
+	}
+	.fotos{
+	width: 100%!important;
+	}
+	.w_source > video{
+		width:1000px!important;
+		margin-left:-300px!important;
+		
+	}
+
+
+}
+
+header{
+  width: 100%;
+  height: 700px;
+  /*background:#1F2530;*/
+  background: url(img/header_02.jpg)no-repeat 50% 0%;
+background-size: 100%;
+background-attachment: fixed;
+  box-shadow:inset 0px 0px 10px black;
+  position: relative;
+  z-index: 200;
+
+}
+#logo{
+	width: 300px;
+	height: 200px;
+	background: url("img/logo_gio_sombra3.png")no-repeat 50%;
+	background-size: 200px;
+	margin: 0 auto;
+	top: 100px;
+	position: relative;
+}
+#text_header{
+	width: 70%;
+	text-align: center;
+	margin: 0 auto;
+	border:solid 2px #FFF;
+	padding: 5px;
+	margin-top: 100px;
+}
+
+#text_header h1{
+	margin: 0 auto;
+  font-size: 4em;
+  font-weight: lighter;
+	color: aliceblue;
+	text-shadow: 0px 0px 1px black;
+	font-family:myfont2;
+}
+#text_header h2{
+	font-size: 2em;
+	font-weight: lighter;
+	color: aliceblue;
+	text-shadow: 0px 0px 5px black;
+	font-family: 'myfont1';
+
+}
+
+#text_header > i{
+	color:whitesmoke;
+	margin: 0px 30px;
+	text-shadow: 0px 0px 5px black;
+	cursor: pointer;
+}
+
+
+/*#logo{
+  width: 35%;
+  height: 150px;
+  background: url("img/logo_gio.png")no-repeat 80%,rgba(31,37,48,0.7);
+  background-size: 150px;
+  float: left;
+  margin-top: 20%;
+}*/
+
+section{
+	width: 100%;
+	min-height: 440px;
+	height: auto;
+	margin: 0 auto;
+	border-radius: 4px;
+    background: #F2F2F2;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 0 white;
+    border: 1px solid #d1d1d1;
+	text-align: center;
+	padding-bottom: 10px;
+	overflow: hidden;
+	position: relative;
+	transition: all 0.5s ease-out;
+	
+}
+.sec_a, .sec_c{
+	height:650px;
+}
+.verMas, .verMas_branding{
+	position:absolute;
+	bottom: 0px;
+	right:5%;
+	z-index:400;
+	width: 50px;
+	height: 50px;
+	background: black;
+}
+.verMenos, .verMenos_branding{
+	position:absolute;
+	bottom: 0px;
+	right:5%;
+	z-index:400;
+	width: 50px;
+	height: 50px;
+	background: black;
+	display: none;
+	
+}
+.verMenos i, .verMas i, .verMenos_branding i, .verMas_branding i{
+	color:white;
+
+}
+
+.tipob{
+	  background:white;
+	box-shadow:none;
+	 border: none;
+	
+}
+section h1{
+	font-size:4em;
+	font-weight: bolder;
+	margin-bottom: 10px;
+	font-family: 'myfont2';
+
+}
+section p{
+	text-align:left;
+}
+
+.sub{
+	display: inline-block;
+	vertical-align: top;
+}
+._der{
+	width:30%;
+	height: auto;
+	
+}
+
+._izq{
+	width:570px;
+	height: auto;
+	
+}
+
+.sub >.element{
+	display:inline-block;
+	vertical-align: top;
+	width: 500px;
+	height: auto;
+	overflow: hidden;
+
+}
+/*BOTONERA PARA LOS VIDEOS*/
+.btn_video{
+	width:100%;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+	
+}
+
+.btn_v{
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	background:gray;
+	margin: 0 auto;
+	margin-top: 5px;
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: top;
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.8), 0 1px 0 white;
+	border: 1px solid #d1d1d1;
+}
+.v_activo{
+	background: #F2F2F2;
+}
+
+/*INICIO DE CONTENEDOR DE IMAGENES*/
+
+
+.fotos{
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+.fotos img{
+	height:auto;
+	max-width:100%;
+	transition:all 2s ease-out;
+	display: inline-block;
+	vertical-align:middle;
+}
+
+._sup:hover img , ._inf:hover img, ._supDos:hover img, ._supTres:hover img{
+	height:auto;
+	transform: rotate(5deg);
+}
+._sup{
+  margin: 0 auto;
+  width: 70%;
+  height:200px;
+  overflow: hidden;
+  margin-bottom: 1%;
+  margin-top: 1.5%;
+}
+._supDos{
+  margin: 0 auto;
+  width: 25%;
+  height:200px;
+  overflow: hidden;
+  margin-bottom: 1%;
+  margin-top: 1.5%;
+}
+._supTres{
+  margin: 0 auto;
+  width: 97%;
+  height:200px;
+  overflow: hidden;
+  margin-bottom: 1%;
+  margin-top: 1.5%;
+}
+._inf{
+	margin: 0 auto;
+	margin: 0.5% 0.5% 0% 0.5%;
+	width: 47.60%;
+	height: auto;
+	overflow: hidden;
+
+}
+._inf_branding{
+	margin: 0 auto;
+	margin: 0.5% 0.5% 0% 0.5%;
+	width: 47.60%;
+	height: auto;
+	overflow: hidden;
+
+}
+.ft{
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 0 white;
+	border: 1px solid #d1d1d1;
+	border-radius: 8px;
+	display: inline-block;
+	vertical-align: top;
+	 background: #F2F2F2;
+}
+
+/*INICIO DE CONTENIDO UNO*/
+
+#secUno{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.unoItem{
+  width: 30%;
+  min-height: 330px;
+  height: auto;
+  /*background: #1F2530;*/
+  background: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  vertical-align: top;
+  margin: 0% 3px;
+  border-radius: 10px;
+}
+.unoItem:hover{
+  cursor: pointer;
+  box-shadow: 0px 0px 2px 1px black;
+}
+.unoItem:hover i{
+  transform: rotateY(180deg);
+}
+.unoItem i{
+  /*color: #6caa46;*/
+  color: #FFF;
+  margin-top: 10%;
+  font-size: 8em;
+  transition: all 0.5s ease-out;
+  perspective: true;
+
+}
+.unoItem h2{
+  margin: 5%;
+  font-size: 1.5em;
+  color: #fff;
+  font-weight: lighter;
+}
+.lineaCero{
+  width: 50%;
+  border-top: dashed 1px #FFF;
+  margin: 0 auto;
+}
+.unoItem p{
+  margin: 5%;
+  color: #cde263;
+  font-weight: lighter;
+}
+
+
+/*FIN DE CSS DE CONTENIDO UNO*/
+
+
+
+
+
+
+
+#secDos{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-top: 10px;
+}
+#secDos iframe{
+  margin: 0 auto;
+}
+footer {
+	color: rgba(0,0,0,0.5);
+	font-family: arial;
+	font-size: 13px;
+	text-align: center;
+  font-weight: lighter;
+	padding: 10px;
+}
+/*AJUSTE DEL CARRUSEL*/
+.container{
+  width: 100%!important;
+}
+.carousel-control .fa{
+position: absolute;
+top: 50%;
+z-index: 5;
+display: inline-block;
+margin-top: -10px;
+
+}
+
+
+
+/*CONTENIDO D WEB/INTERACTIVO*/
+
+.text_sec_web{
+	width: 900px;
+	height: auto;
+	text-align: justify;
+	margin: 0 auto;
+
+}
+.cont_item{
+	/*border: solid red*/;
+	width: 900px;
+	height: 450px;
+	overflow: hidden;
+	margin: 0 auto;
+	text-align: center;
+	background: #F2F2F2;
+	background-size: 100%;
+	position: relative;
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.7), 0 3px 0 white;
+	border: 1px solid #d1d1d1;
+	border-radius: 8px;
+	display: none;
+}
+.web_a{
+	display: block;
+}
+.w_source{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	left: 0;
+	opacity: 0.8;
+}
+	.w_source > video{
+		width:100%;
+	}
+.w_texto{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	bottom: 0;
+	background: rgba(8,3,28,0.5);
+	padding-left: 20px;
+	padding-right: 20px;
+
+	/*border: solid red;*/
+}
+.w_texto h1{
+	font-size: 3.5em;
+	font-weight: lighter;
+	color: aliceblue;
+	text-shadow: 0px 4px 5px black;
+	text-align: left;
+	color:white;
+}
+.w_texto p{
+	color: white;
+}
+.btn_veronline{
+	width: 100px;
+	height: 30px;
+	background:#FF5C40;
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.8), 0 1px 0 white;
+	border: 1px solid #d1d1d1;
+	color: #FFF;
+	font-size: 1.1em;
+	cursor: pointer;
+	border-radius: 15px;
+	line-height: 30px;
+}
+
+.btn_veronline a{
+	text-decoration: none;
+	color: white;
+}
+.btn_veronline a:hover{
+	text-decoration: none;
+	color: white;
+}
+
+.online_ajuste{
+	float:left;
+}
+
+
+.btn_web{
+	width:100%;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+	
+}
+
+.btn_w{
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	background:gray;
+	margin: 0 auto;
+	margin-top: 5px;
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: top;
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.8), 0 1px 0 white;
+	border: 1px solid #d1d1d1;
+}
+.w_active{
+	background:#F2F2F2!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
